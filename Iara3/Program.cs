@@ -8,9 +8,7 @@ class Program
         List<Users> _userList = new List<Users>();
         List<Vehicles> _vehicleList = new List<Vehicles>();
 
-      
-
-
+ 
         while (true)
         {
 
@@ -30,8 +28,9 @@ class Program
 
             if (key == 1)
             {
-                
-                    //Console.Clear();
+
+                    Console.Clear();
+                    Console.WriteLine();
                     Console.WriteLine();
                     Console.WriteLine();
                     Console.WriteLine();
@@ -59,7 +58,11 @@ class Program
             }
             else if (key == 2)
             {
-
+                Console.Clear();
+                Console.WriteLine();
+                Console.WriteLine();
+                Console.WriteLine();
+                Console.WriteLine();
                 Console.WriteLine("\t \t VEHICLE MENU");
                 Console.WriteLine();
                 Console.WriteLine("\t 1 - Register a vehicle");
@@ -97,10 +100,22 @@ class Program
 
                 if (key == 2)
                 {
+                    Console.Clear();
+                    Console.WriteLine();
+                    Console.WriteLine();
+                    Console.WriteLine();
+                    Console.WriteLine();
+                    Console.WriteLine("\t \t ALL VEHICLES");
+                    Console.WriteLine();
                     foreach (var item in _vehicleList)
                     {
                         Console.WriteLine("Vehicle: " + item.Model);
                     }
+
+                    Console.WriteLine();
+                    Console.WriteLine();
+                    Console.WriteLine("Press a key to continue");
+                    Console.ReadKey();
                     
                 }
             }
