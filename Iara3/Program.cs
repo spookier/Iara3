@@ -8,26 +8,29 @@ class Program
         List<Users> _userList = new List<Users>();
         List<Vehicles> _vehicleList = new List<Vehicles>();
 
-        Console.Clear();
-        Console.WriteLine();
-        Console.WriteLine();
-        Console.WriteLine();
-        Console.WriteLine();
-        Console.WriteLine("\t\tMAIN MENU");
-        Console.WriteLine("\t 1 - REGISTER NEW USER");
-        Console.WriteLine("\t 2 - REGISTER CAR");
-        Console.WriteLine();
-        Console.Write("\t Choose an option:");
+      
 
-   
+
         while (true)
         {
+
+            Console.Clear();
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine("\t\tMAIN MENU");
+            Console.WriteLine("\t 1 - REGISTER NEW USER");
+            Console.WriteLine("\t 2 - REGISTER CAR");
+            Console.WriteLine();
+            Console.Write("\t Choose an option:");
+
             int key = Convert.ToInt32(Console.ReadLine());
+
 
             if (key == 1)
             {
-                for (int i = 0; i < 2; i++)
-                {
+                
                     //Console.Clear();
                     Console.WriteLine();
                     Console.WriteLine();
@@ -46,9 +49,6 @@ class Program
                     Users user = new Users(userName, CreditCard, IdentVV);
                     _userList.Add(user);
 
-
-
-                }
 
                 foreach (var item in _userList)
                 {
@@ -101,7 +101,7 @@ class Program
                     {
                         Console.WriteLine("Vehicle: " + item.Model);
                     }
-                    key = 0;
+                    
                 }
             }
         }
